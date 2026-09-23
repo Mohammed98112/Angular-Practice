@@ -1,0 +1,7 @@
+<h1 class="page-title">Products</h1>
+
+<div class="grid">
+  @for (product of products; track product.id) {
+    <app-product-card [product]="product" />
+  }
+</div>

@@ -1,0 +1,19 @@
+<a class="back-link" routerLink="/">&larr; Back to products</a>
+
+@if (product; as p) {
+  <div class="details">
+    <img class="photo" [src]="p.photo" [alt]="p.name" />
+    <div class="info">
+      <h1>{{ p.name }}</h1>
+      <p class="price">${{ p.price.toFixed(2) }}</p>
+      <p class="description">{{ p.description }}</p>
+      @if (p.stock > 0) {
+        <p class="stock in-stock">In stock: {{ p.stock }}</p>
+      } @else {
+        <p class="stock out-of-stock">Out of stock</p>
+      }
+    </div>
+  </div>
+} @else {
+  <p class="not-found">Product not found.</p>
+}

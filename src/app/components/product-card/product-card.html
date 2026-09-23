@@ -1,0 +1,7 @@
+<a class="card" [routerLink]="['/productdetails', product().id]">
+  <img class="photo" [src]="product().photo" [alt]="product().name" />
+  <div class="body">
+    <h3 class="name">{{ product().name }}</h3>
+    <p class="price">${{ product().price.toFixed(2) }}</p>
+  </div>
+</a>

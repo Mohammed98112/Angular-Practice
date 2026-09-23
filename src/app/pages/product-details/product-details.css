@@ -1,0 +1,57 @@
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #1f2937;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.details {
+  display: flex;
+  gap: 24px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.photo {
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f3f4f6;
+  flex-shrink: 0;
+}
+
+.info h1 {
+  margin: 0 0 8px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+
+.description {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.stock {
+  font-weight: bold;
+}
+
+.in-stock {
+  color: #15803d;
+}
+
+.out-of-stock {
+  color: #b91c1c;
+}
+
+.not-found {
+  color: #b91c1c;
+  font-weight: bold;
+}

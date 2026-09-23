@@ -1,0 +1,10 @@
+.page-title {
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
